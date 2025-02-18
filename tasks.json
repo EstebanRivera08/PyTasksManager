@@ -1,0 +1,23 @@
+[
+    {
+        "id": "94516947",
+        "title": "Figures and text for Ignacio's paper",
+        "main_state": "in pause",
+        "sub_state": "Urgent",
+        "created_at": "2025-02-17 23:47:51",
+        "history": [
+            "2025-02-17 23:47:51: Task created with state 'in progress' and sub-state 'Urgent'.",
+            "2025-02-17 23:51:44: Changed main state from 'in progress' to 'in pause', sub state from 'Urgent' to 'Urgent'."
+        ]
+    },
+    {
+        "id": "3064e828",
+        "title": "Tasks manager mini project",
+        "main_state": "done",
+        "sub_state": "To the future",
+        "created_at": "2025-02-17 23:49:55",
+        "history": [
+            "2025-02-17 23:49:55: Task created with state 'done' and sub-state 'To the future'."
+        ]
+    }
+]
