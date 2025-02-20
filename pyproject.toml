@@ -9,6 +9,7 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "alive-progress>=3.2.0",
+    "rich>=13.9.4",
     "textual>=2.1.0",
 ]
 

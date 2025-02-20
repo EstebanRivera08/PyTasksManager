@@ -1,17 +1,14 @@
 from alive_progress import alive_bar
 import time
-from .app_deepseek import TaskManagerApp
+# from .app_deepseek import TaskManagerApp
+from . import app_main
 
 __all__ = ["app"]
 
 def main() -> None:
-    print("Hello from pytasksmanager!")
-
     with alive_bar(500) as bar:
         for _ in range(500) :
             time.sleep(.001)
-            bar()    
+            bar()   
 
-    app = TaskManagerApp()
-    app.run()
-
+    app_main.run_app()
