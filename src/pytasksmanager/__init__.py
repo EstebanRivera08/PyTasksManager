@@ -1,6 +1,6 @@
 from alive_progress import alive_bar
 import time
-from . import app
+from .app_deepseek import TaskManagerApp
 
 __all__ = ["app"]
 
@@ -12,5 +12,6 @@ def main() -> None:
             time.sleep(.001)
             bar()    
 
-    app.run_app()
+    app = TaskManagerApp()
+    app.run()
 

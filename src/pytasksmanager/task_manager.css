@@ -1,0 +1,67 @@
+/* task_manager.css */
+.side-main {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 35%;
+    dock: left;
+    border-right: solid $accent;
+    background: $panel;
+    padding: 1;
+}
+
+.main-content {
+    width: 65%;
+    dock: right;
+    padding: 1;
+}
+
+.tabs-list {
+    height: 70%;
+    margin: 1 0;
+}
+
+.task-table {
+    width: 100%;
+    height: 80%;
+}
+
+.tab-buttons {
+    layout: horizontal;
+    height: auto;
+    margin: 1 0;
+}
+
+.tab-buttons > Button {
+    margin-right: 1;
+}
+
+.task-buttons {
+    layout: horizontal;
+    height: auto;
+    margin: 1 0;
+}
+
+.task-buttons > Button {
+    margin-right: 1;
+}
+
+DataTable {
+    width: 100%;
+}
+
+DataTable > .datatable--header {
+    background: $accent;
+    color: $text;
+}
+
+InputModal, OptionModal, ConfirmationModal {
+    layer: overlay;
+    width: 60%;
+    height: auto;
+    background: $surface;
+    border: solid $accent;
+    padding: 1;
+}

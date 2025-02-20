@@ -1,23 +1,27 @@
 [
     {
-        "id": "94516947",
-        "title": "Figures and text for Ignacio's paper",
-        "main_state": "in pause",
-        "sub_state": "Urgent",
-        "created_at": "2025-02-17 23:47:51",
+        "id": 1,
+        "tab": "SonoGenetics",
+        "title": "Figures for Ignacio",
+        "comment": "Prepare the paper's figures and paragraph describing the simulation results",
+        "state": "in progress",
+        "created_at": "2025-02-20 00:36:44",
+        "last_modified": "2025-02-20 00:36:44",
         "history": [
-            "2025-02-17 23:47:51: Task created with state 'in progress' and sub-state 'Urgent'.",
-            "2025-02-17 23:51:44: Changed main state from 'in progress' to 'in pause', sub state from 'Urgent' to 'Urgent'."
+            "2025-02-20 00:36:44: Task created"
         ]
     },
     {
-        "id": "3064e828",
-        "title": "Tasks manager mini project",
-        "main_state": "done",
-        "sub_state": "To the future",
-        "created_at": "2025-02-17 23:49:55",
+        "id": 2,
+        "tab": "SonoGenetics",
+        "title": "Ceci besitos",
+        "comment": "est\u00e1 durmiendo. hehe",
+        "state": "in progress",
+        "created_at": "2025-02-20 00:50:55",
+        "last_modified": "2025-02-20 00:51:05",
         "history": [
-            "2025-02-17 23:49:55: Task created with state 'done' and sub-state 'To the future'."
+            "2025-02-20 00:50:55: Task created",
+            "2025-02-20 00:51:05: Changed comment from 'est\u00e1 durmiendo' to 'est\u00e1 durmiendo. hehe'"
         ]
     }
 ]
