@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Each user sessions
+
+**/task_data/
