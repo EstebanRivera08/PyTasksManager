@@ -40,7 +40,7 @@ class Task:
     STATE_MAP = {
         'u': ('Urgent', 'red'),
         'p': ('In Pause', 'blue'),
-        'g': ('In Progress', 'yellow'),
+        'g': ('Started', 'yellow'),
         'f': ('Finished', 'green')
     }
 
@@ -77,16 +77,21 @@ class Task:
         )
 
 def load_tabs():
-    if os.path.exists(TABS_FILE):
-        with open(TABS_FILE, 'r') as f:
-            data = json.load(f)
-            return [Tab.from_dict(item) for item in data]
-    return []
+    tabs = []
+    if os.path.exists(DATA_DIR):
+        for filename in os.listdir(DATA_DIR):
+            if filename.endswith('.json'):
+                with open(os.path.join(DATA_DIR, filename), 'r') as f:
+                    data = json.load(f)
+                    tabs.append(Tab.from_dict(data))
+    return tabs
 
 def save_tabs(tabs):
     os.makedirs(DATA_DIR, exist_ok=True)
-    with open(TABS_FILE, 'w') as f:
-        json.dump([tab.to_dict() for tab in tabs], f, indent=4)
+    for tab in tabs:
+        tab_file = os.path.join(DATA_DIR, f"{tab.name}.json")
+        with open(tab_file, 'w') as f:
+            json.dump(tab.to_dict(), f, indent=4)
 
 def display_tabs(tabs):
     table = Table(box=box.ROUNDED, title="Tabs Manager")
