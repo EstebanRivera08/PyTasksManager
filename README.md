@@ -1,8 +1,7 @@
 # Simple package to manage your tasks
 
 This python package `PyTaskManager` contains the executable `pytasksmanager` to produce an
-easy and friendly command window app to store tasks informations. Made just to organize my thoughs
-during my PhD.
+easy and friendly command window app to store tasks informations.
 
 ## Quickstart
 
